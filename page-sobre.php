@@ -6,15 +6,7 @@
 	<?php while( have_posts() ): ?>
 		<?php the_post(); ?>
 
-		<?php // include __DIR__ . "/inc/intro.php"; ?>
-
-		<!-- INTRO -->
-		<section class="introducao-padrao sobre-banner">
-			<div class="container">
-				<h1 data-anime="400">Sobre</h1>
-				<p data-anime="800">conheça mais sobre a bikcraft</p>
-			</div>
-		</section>
+		<?php include __DIR__ . "/inc/pages-intro.php"; ?>
 
 		<!-- MISSÃO, VISAO, VALORES -->
 		<section class="missao" data-anime="1200">

@@ -6,15 +6,7 @@
 	<?php while( have_posts() ): ?>
 		<?php the_post(); ?>
 
-		<?php // include __DIR__ . "/inc/intro.php"; ?>
-
-		<!-- INTRO -->
-		<section class="introducao-padrao portfolio-banner">
-			<div class="container">
-				<h1 data-anime="400">Portfólio</h1>
-				<p data-anime="800">conheça os produtos que amamos mostrar</p>
-			</div>
-		</section>
+		<?php include __DIR__ . "/inc/pages-intro.php"; ?>
 
 		<!-- DEPOIMENTOS -->
 		<section class="container" data-slide="quote" data-anime="1200">

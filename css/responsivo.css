@@ -1,11 +1,3 @@
-:root {
-	--font-primario: Arial, Helvetica, sans-serif;
-	--font-secundario: Georgia, "Times New Roman", serif;
-	--cor-primario: #fec63e;
-	--cor-secundario: #000000;
-	--cor-terciario: #ffffff;
-}
-
 @media only screen and (min-width: 788px) and (max-width: 979px) {
 	.footer-redes-sociais ul li:nth-child(2) {
 		margin-right: 5px;

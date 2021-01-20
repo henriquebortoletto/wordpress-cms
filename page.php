@@ -43,7 +43,7 @@
 				</li>
 			</ul>
 			<div class="call">
-				<p>clique aqui e veja detalhes do produto</p>
+				<p><?php the_field( 'call_to_action_produtos' ); ?></p>
 				<a href="./produtos/" class="btn btn-secundario">Produtos</a>
 			</div>
 		</section>

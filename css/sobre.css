@@ -1,10 +1,3 @@
-:root {
-	--font-primario: Arial, Helvetica, sans-serif;
-	--font-secundario: Georgia, "Times New Roman", serif;
-	--cor-primario: #fec63e;
-	--cor-secundario: #000000;
-	--cor-terciario: #ffffff;
-}
 .sobre-banner {
 	background-image: url(../img/bg-sobre.jpg);
 	background-repeat: no-repeat;
