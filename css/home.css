@@ -350,7 +350,6 @@ h2.subtitulo::after {
 /* QUOTE FOOTER */
 .quote-footer {
 	text-align: center;
-	background-image: url(../img/bg-footer.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;

@@ -1,9 +1,17 @@
+<?php $contato = get_page_by_title( 'contato' ); ?>
+
+<style>
+	.quote-footer {
+		background-image: url(<?php the_field( 'bg_footer_quote', $contato ); ?>);
+	}
+</style>
+
 	<!-- QUOTE FOOTER -->
 	<section class="quote-footer">
 		<div class="container">
 			<blockquote class="quote-wrapper">
-				<p>“o verdadeiro segredo da felicidade está em ter um genuíno interesse por todos os detalhes da vida cotidiana”</p>
-				<cite>Willian Morris</cite>
+				<?php the_field( 'citacao_footer', $contato ); ?>
+				<cite><?php the_field( 'autor_citacao_footer', $contato ); ?></cite>
 			</blockquote>
 		</div>
 	</section>
@@ -14,23 +22,19 @@
 			<div class="container">
 				<div class="grid-8 footer-historia">
 					<h3>Nossa história</h3>
-					<p>Quando iniciamos a Bikcraft queriamos apenas um produto que adoraríamos utilizar. Eramos apaixonados por pedalar e também por fazer as coisa em que nossas próprias mãos. Asssim surigiu um sonho na garagem da nossa casa.</p>
+					<?php the_field( 'historia', $contato ); ?>
 				</div>
 				<div class="grid-4 footer-contato">
 					<h3>Contato</h3>
 					<ul>
-						<li><a href="tel:+2199999999">- 21 9999-9999</a></li>
-						<li><a href="mailto:contato@bikcraft.com">- contato@bikcraft.com</a></li>
-						<li>- São Paulo - SP</li>
+						<li><a href="tel:<?php the_field( 'telefone', $contato ); ?>">- <?php the_field( 'telefone', $contato ); ?></a></li>
+						<li><a href="mailto:<?php the_field( 'email', $contato ); ?>">- <?php the_field( 'email', $contato ); ?></a></li>
+						<li>- <?php the_field( 'endereco', $contato ); ?></li>
 					</ul>
 				</div>
 				<div class="grid-4 footer-redes-sociais">
 					<h3>Redes Sociais</h3>
-					<ul>
-						<li><a href="#" target="_blank"><img src="<?= get_template_directory_uri(); ?>/img/redes-sociais/facebook.svg" alt="Bickraft - Veja nosso perfil no Facebook"></a></li>
-						<li><a href="#" target="_blank"><img src="<?= get_template_directory_uri(); ?>/img/redes-sociais/instagram.svg" alt="Bikcraft - Veja nosso perfil no Instagram"></a></li>
-						<li><a href="#" target="_blank"><img src="<?= get_template_directory_uri(); ?>/img/redes-sociais/twitter.svg" alt="Bikcraft - Veja nosso perfil no Twitter"></a></li>
-					</ul>
+					<?php include 'inc/redes-sociais.php'; ?>
 				</div>
 			</div>
 		</div>
