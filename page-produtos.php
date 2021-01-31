@@ -6,7 +6,7 @@
 	<?php while( have_posts() ): ?>
 		<?php the_post(); ?>
 
-		<?php include __DIR__ . "/inc/pages-intro.php"; ?>
+		<?php include 'inc/pages-intro.php'; ?>
 
 		<!-- PRODUTO PASSEIO -->
 		<section class="container produto-item" data-anime="1200">

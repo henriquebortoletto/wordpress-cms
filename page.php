@@ -1,6 +1,22 @@
 <?php get_header(); ?>
 
 <?php if ( have_posts() ): ?>
+
+<?php
+	$imagemId = get_field( 'background_home' );
+	$backgroundLarge = wp_get_attachment_image_src( $imagemId, 'large' );
+	$backgroundMedium =  wp_get_attachment_image_src( $imagemId, 'medium' );
+?>
+<style>
+	.introducao {
+		background-image: url(<?= $backgroundLarge[0]; ?>);
+	}
+	@media only screen and (max-width: 787px) {
+		.introducao {
+			background-image: url(<?= $backgroundMedium[0]; ?>);
+		}
+	}
+</style>
 	<?php while ( have_posts() ): ?>
 		<?php the_post(); ?>
 
@@ -52,11 +68,11 @@
 		<section class="portfolio" data-anime="2200">
 			<div class="container" >
 				<h2 class="subtitulo">Portfólio</h2>
-				<?php include __DIR__ . '/inc/slide-portfolio.php'; ?>
+				<?php include 'inc/slide-portfolio.php'; ?>
 			</div>
 		</section>
 
-		<?php include __DIR__ . '/inc/qualidade.php'; ?>
+		<?php include 'inc/qualidade.php'; ?>
 
 	<?php endwhile; ?>
 <?php else: ?>

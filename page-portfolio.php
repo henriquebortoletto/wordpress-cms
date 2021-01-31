@@ -6,7 +6,7 @@
 	<?php while( have_posts() ): ?>
 		<?php the_post(); ?>
 
-		<?php include __DIR__ . "/inc/pages-intro.php"; ?>
+		<?php include 'inc/pages-intro.php'; ?>
 
 		<!-- DEPOIMENTOS -->
 		<section class="container" data-slide="quote" data-anime="1200">
@@ -27,7 +27,7 @@
 		<!-- PORTFOLIO -->
 		<section class="portfolio page-portfolio" data-anime="1600">
 			<div class="container">
-				<?php include __DIR__ . '/inc/slide-portfolio.php'; ?>
+				<?php include 'inc/slide-portfolio.php'; ?>
 			</div>
 		</section>
 

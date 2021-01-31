@@ -6,7 +6,7 @@
 	<?php while ( have_posts() ): ?>
 		<?php the_post(); ?>
 
-		<?php include __DIR__ . "/inc/pages-intro.php"; ?>
+		<?php include 'inc/pages-intro.php'; ?>
 
 		<!-- ORÇAMENTO -->
 		<section class="orcamento-contato" data-anime="1200">
