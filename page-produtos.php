@@ -77,55 +77,7 @@
 			</div>
 		</section>
 
-		<!-- ORÇAMENTO -->
-		<section class="orcamento">
-			<div class="container">
-				<h2 class="subtitulo">Orçamento</h2>
-				<div class="grid-8">
-					<form action="./enviar.php" method="POST" id="form-orcamento" class="form form-php">
-						<div class="form-group">
-							<label for="nome">Nome</label>
-							<input type="text" name="nome" id="nome" autocomplete="off" required>
-						</div>
-						<div class="form-group">
-							<label for="email">E-mail</label>
-							<input type="email" name="email" id="email" autocomplete="off" required>
-						</div>
-						<div class="form-group">
-							<label for="telefone">Telefone</label>
-							<input type="text" name="telefone" id="telefone" autocomplete="off" required>
-						</div>
-						<div class="form-group no-robot">
-							<label for="no-robot-frase" class="no-robot">Se você não é um robô, deixe em branco.</label>
-							<input type="text" id="no-robot-frase" class="no-robot" name="leaveblank">
-						</div>
-						<div class="form-group no-robot">
-							<label for="no-robot-frase" class="no-robot">Se você não é um robô, não mude este campo.</label>
-							<input type="text" id="no-robot-frase" class="no-robot" name="dontchange" value="https://">
-						</div>
-						<div class="form-group">
-							<label for="especificacoes">Especificações</label>
-							<textarea name="especificacoes" id="especificacoes" cols="30" rows="10" required></textarea>
-						</div>
-						<button type="submit" id="enviar" name="enviar" class=" btn btn-enviar">Enviar</button>
-					</form>
-				</div>
-				<div class="grid-8 orcamento-dados">
-					<h3>Dados</h3>
-					<span>+55 21 99999-9999</span>
-					<span>orcamento@bikcraft.com</span>
-					<h3>Monte sua Bikcraft</h3>
-					<p>Escolha as especificações</p>
-					<ul>
-						<li>- Cores</li>
-						<li>- Estilo</li>
-						<li>- Acessórios</li>
-						<li>- Medidas</li>
-						<li>- E outros</li>
-					</ul>
-				</div>
-			</div>
-		</section>
+		<?php include 'inc/orcamento.php'; ?>
 
 	<?php endwhile; ?>
 <?php else: ?>
