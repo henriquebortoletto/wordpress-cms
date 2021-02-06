@@ -35,10 +35,7 @@ if ( !function_exists( 'custom_post_type_products' ) ) {
 			],
 			'query_var' => true,
 			'supports' => [
-				'title',
-				'editor',
-				'page_attributes',
-				'posts-formats'
+				'title', 'editor', 'page_attributes', 'posts-formats'
 			],
 			'labels' => [
 				'name' => 'Produtos',
@@ -51,7 +48,7 @@ if ( !function_exists( 'custom_post_type_products' ) ) {
 				'new_item' => 'Novo Produto',
 				'view' => 'Ver Produto',
 				'view_item' => 'Ver Produto',
-				'search_items' => 'Procurar Produtos',
+				'search_items' => 'Procurar Produto',
 				'not_found' => 'Nenhum Produto Encontrado',
 				'not_found_in_trash' => 'Nenhum Produto Encontrado no Lixo',
 			]

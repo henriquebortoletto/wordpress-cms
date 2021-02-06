@@ -4,7 +4,6 @@
 	<?php while( have_posts() ): ?>
 		<?php the_post(); ?>
 
-		<!-- PRODUTO PASSEIO -->
 		<section class="container produto-item produto-single" data-anime="1200">
 			<div class="grid-11">
 				<img src="<?php the_field( 'foto_produto_1' ); ?>" alt="Bikcraft - Bicicleta <?php the_title(); ?>">
