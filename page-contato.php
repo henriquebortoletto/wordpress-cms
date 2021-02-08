@@ -12,7 +12,7 @@
 		<section class="orcamento-contato" data-anime="1200">
 			<div class="container">
 				<div class="grid-8">
-					<form action="<?= get_template_directory_uri(); ?>/enviar.php" method="POST" id="form-orcamento" class="form-contato form-php">
+					<form action="<?php bloginfo( 'url' ); ?>/enviar.php" method="POST" id="form-orcamento" class="form-contato form-php">
 						<div class="form-group">
 							<label for="nome">Nome</label>
 							<input type="text" name="nome" id="nome" autocomplete="off" required>
@@ -26,12 +26,12 @@
 							<input type="text" name="telefone" id="telefone" autocomplete="off" required>
 						</div>
 						<div class="form-group no-robot">
-							<label for="no-robot-frase" class="no-robot">Se você não é um robô, deixe em branco.</label>
-							<input type="text" id="no-robot-frase" class="no-robot" name="leaveblank">
+							<label for="no-robot-leaveblank" class="no-robot">Se você não é um robô, deixe em branco.</label>
+							<input type="text" id="no-robot-leaveblank" class="no-robot" name="leaveblank">
 						</div>
 						<div class="form-group no-robot">
-							<label for="no-robot-frase" class="no-robot">Se você não é um robô, não mude este campo.</label>
-							<input type="text" id="no-robot-frase" class="no-robot" name="dontchange" value="https://">
+							<label for="no-robot-dontchange" class="no-robot">Se você não é um robô, não mude este campo.</label>
+							<input type="text" id="no-robot-dontchange" class="no-robot" name="dontchange" value="https://">
 						</div>
 						<div class="form-group">
 							<label for="especificacoes">Especificações</label>

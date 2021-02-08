@@ -1,0 +1,112 @@
+.introducao-blog {
+	text-align: center;
+	background: var(--cor-secundario);
+	width: 100%;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	margin-top: 92px;
+}
+.introducao-blog h1 {
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--cor-terciario);
+}
+.introducao-blog h1::after {
+	content: "";
+	background: var(--cor-terciario);
+	display: block;
+	width: 60px;
+	height: 3px;
+	margin-top: 5px;
+	margin-right: auto;
+	margin-left: auto;
+}
+.introducao-blog p {
+	font-size: 14px;
+	color: var(--cor-terciario);
+	margin-top: 15px;
+}
+.blog-container {
+	margin-top: 60px;
+	margin-bottom: 60px;
+}
+.blog-container article {
+	margin-bottom: 20px;
+}
+.blog-thumbnail {
+	background: var(--cor-secundario);
+	display: flex;
+	justify-content: center;
+	padding: 20px;
+}
+.blog-thumbnail img {
+	filter: invert(96%) sepia(28%) saturate(7026%) hue-rotate(318deg)
+		brightness(95%) contrast(110%);
+}
+.blog-conteudo {
+	background: var(--cor-primario);
+	padding: 20px;
+}
+.blog-conteudo h2 {
+	text-align: center;
+	font-size: 18px;
+	font-weight: bold;
+	color: var(--cor-secundario);
+}
+.blog-conteudo h2:hover {
+	color: var(--cor-terciario);
+}
+.blog-nav a {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--cor-primario);
+	background: var(--cor-secundario);
+	display: inline-block;
+	padding: 15px 30px;
+}
+.blog-nav a:hover {
+	color: var(--cor-terciario);
+	background: var(--cor-primario);
+}
+.introducao-single-blog {
+	text-align: center;
+	background: var(--cor-secundario);
+	width: 100%;
+	height: 160px;
+	display: flex;
+	align-items: center;
+	margin-top: 92px;
+}
+.introducao-single-blog h1 {
+	font-size: 48px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: var(--cor-terciario);
+}
+.container-single-post {
+	margin-top: 60px;
+	margin-bottom: 40px;
+}
+.container-single-post p {
+	font-family: var(--font-primario);
+	font-size: 18px;
+	line-height: 27px;
+	margin-bottom: 20px;
+}
+.single-post-category {
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	color: var(--cor-primario);
+	display: inline-block;
+}
+.single-post-category::before {
+	content: ">";
+	display: inline-block;
+	margin-right: 10px;
+	margin-bottom: 20px;
+}

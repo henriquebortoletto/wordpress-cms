@@ -18,6 +18,6 @@
 <?php if ( !is_page( 'portfolio' ) ): ?>
 	<div class="call">
 		<p><?php the_field( 'call_to_action_portfolio', $portfolio ); ?></p>
-		<a href="./portfolio/" class="btn btn-primario">Portfólio</a>
+		<a href="<?php bloginfo( 'url' ); ?>/portfolio/" class="btn btn-primario">Portfólio</a>
 	</div>
 <?php endif; ?>

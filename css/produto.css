@@ -4,9 +4,9 @@
 	background-position: center;
 	background-size: cover;
 }
-.produto-item {
+.produto-container {
 	margin-top: 60px;
-	margin-bottom: 60px;
+	margin-bottom: 40px;
 }
 .produto-item .grid-11 {
 	position: relative;
@@ -175,4 +175,5 @@
 }
 .produto-single {
 	margin-top: calc(60px + 92px);
+	margin-bottom: 60px;
 }

@@ -6,7 +6,7 @@
 	<div class="container">
 		<h2 class="subtitulo">Orçamento</h2>
 		<div class="grid-8">
-			<form action="./enviar.php" method="POST" id="form-orcamento" class="form form-php">
+			<form action="<?php bloginfo( 'url' ); ?>/enviar.php" method="POST" id="form-orcamento" class="form form-php">
 				<div class="form-group">
 					<label for="nome">Nome</label>
 					<input type="text" name="nome" id="nome" autocomplete="off" required>

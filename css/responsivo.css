@@ -63,8 +63,19 @@
 		border-color: var(--cor-terciario);
 	}
 	.header-menu li:nth-child(1) a,
-	.header-menu li:nth-child(2) a {
+	.header-menu li:nth-child(2) a,
+	.header-menu li:nth-child(3) a,
+	.header-menu li:nth-child(4) a {
+		margin: 5px;
+	}
+	.header-menu li:nth-child(5) a {
+		margin-left: 10px;
+		margin-right: 5px;
 		margin-bottom: 5px;
+		margin-top: 5px;
+	}
+	.header-menu li:nth-child(5) {
+		width: 100%;
 	}
 	.introducao {
 		background-image: url(../img/bg-mobile.jpg);
@@ -127,5 +138,14 @@
 	/* CONTATO */
 	.form-contato {
 		padding-right: 0;
+	}
+	/* PRODUTO */
+	.produto-single {
+		margin-top: 60px;
+	}
+	/* BLOG */
+	.introducao-blog,
+	.introducao-single-blog {
+		margin-top: 0;
 	}
 }

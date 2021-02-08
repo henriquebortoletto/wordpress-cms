@@ -19,7 +19,7 @@
 	<?php if ( !is_page( 'sobre' ) ): ?>
 		<div class="call">
 			<p><?php the_field( 'call_to_action_qualidade', $sobre ); ?></p>
-			<a href="./sobre/" class="btn btn-secundario">Sobre</a>
+			<a href="<?php bloginfo( 'url' ); ?>/sobre/" class="btn btn-secundario">Sobre</a>
 		</div>
 	<?php endif; ?>
 </section>

@@ -9,6 +9,7 @@
 	$backgroundLarge = wp_get_attachment_image_src( $imagemId, 'large' );
 	$backgroundMedium =  wp_get_attachment_image_src( $imagemId, 'medium' );
 ?>
+
 <style>
 	.introducao {
 		background-image: url(<?= $backgroundLarge[0]; ?>);
@@ -19,6 +20,7 @@
 		}
 	}
 </style>
+
 	<?php while ( have_posts() ): ?>
 		<?php the_post(); ?>
 
@@ -30,41 +32,40 @@
 					<?php the_field( 'quote' ); ?>
 					<cite><?php the_field( 'quote_autor' ); ?></cite>
 				</blockquote>
-				<a href="./produtos/" class="btn btn-primario" data-anime="1200">Orçamento</a>
+				<a href="<?php bloginfo( 'url' ); ?>/produtos/" class="btn btn-primario" data-anime="1200">Orçamento</a>
 			</div>
 		</section>
 
-		<!-- PRODUTOS -->
-		<section class="container produtos" data-anime="1600">
-			<h2 class="subtitulo">Produtos</h2>
-			<ul class="produtos-lista">
-				<li class="grid-1-3">
-					<div class="produtos-icone">
-						<img src="<?= get_template_directory_uri(); ?>/img/produtos/passeio.svg" alt="Bikcraft - Bicicleta Passeio">
-					</div>
-					<h3>Passeio</h3>
-					<p>Muito melhor do que passear pela orla a vidros fechados.</p>
-				</li>
-				<li class="grid-1-3">
-					<div class="produtos-icone">
-						<img src="<?= get_template_directory_uri(); ?>/img/produtos/esporte.svg" alt="Bikcraft - Bicicleta Esporte">
-					</div>
-					<h3>Esporte</h3>
-					<p>Mais rápida do que Forrest Gump, ninguém vai pegar você.</p>
-				</li>
-				<li class="grid-1-3">
-					<div class="produtos-icone">
-						<img src="<?= get_template_directory_uri(); ?>/img/produtos/retro.svg" alt="Bikcraft - Bicicleta Retrô">
-					</div>
-					<h3>Retrô</h3>
-					<p>O passado volta para lembrarmos o que devemos fazer no futuro.</p>
-				</li>
-			</ul>
-			<div class="call">
-				<p><?php the_field( 'call_to_action_produtos' ); ?></p>
-				<a href="./produtos/" class="btn btn-secundario">Produtos</a>
-			</div>
-		</section>
+		<?php $the_query = new WP_Query([
+			'post_type' => 'produtos',
+			'order' => 'ASC' ]); ?>
+
+		<?php if ( $the_query->have_posts() ): ?>
+			<section class="container produtos" data-anime="1600">
+				<h2 class="subtitulo">Produtos</h2>
+				<ul class="produtos-lista">
+					<?php while ( $the_query->have_posts() ): ?>
+						<?php $the_query->the_post(); ?>
+						<li class="grid-1-3">
+							<a href="<?php the_permalink(); ?>">
+								<div class="produtos-icone">
+									<img src="<?php the_field( 'icone_produto' ); ?>" alt="Bikcraft - Bicicleta <?php the_title(); ?>">
+								</div>
+								<h3><?php the_title(); ?></h3>
+								<p><?php the_field( 'resumo_produto_home' ); ?></p>
+							</a>
+						</li>
+					<?php endwhile; ?>
+					<?php wp_reset_query(); wp_reset_postdata(); ?>
+				</ul>
+				<div class="call">
+					<p><?php the_field( 'call_to_action_produtos' ); ?></p>
+					<a href="<?php bloginfo( 'url' ); ?>/produtos/" class="btn btn-secundario">Produtos</a>
+				</div>
+			</section>
+		<?php else: ?>
+			<p><?php esc_html_e( 'Desculpe, nenhum post corresponde aos seus critérios.' )?></p>
+		<?php endif; ?>
 
 		<!-- PORTFOLIO -->
 		<section class="portfolio" data-anime="2200">

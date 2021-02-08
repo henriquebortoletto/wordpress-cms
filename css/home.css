@@ -149,6 +149,10 @@ h2.subtitulo::after {
 	padding: 10px;
 	transition: color 700ms;
 }
+.header-menu .current-menu-item a {
+	color: var(--cor-terciario);
+	border-color: var(--cor-terciario);
+}
 .header-menu a:hover {
 	color: var(--cor-terciario);
 }
@@ -235,6 +239,9 @@ h2.subtitulo::after {
 .produtos-lista li {
 	text-align: center;
 	background: var(--cor-primario);
+}
+.produtos-lista li a {
+	color: var(--cor-secundario);
 }
 .produtos-lista li h3 {
 	font-size: 18px;

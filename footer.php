@@ -46,11 +46,6 @@
 	</footer>
 
 	<?php wp_footer(); ?>
-
-	<script src="<?= get_template_directory_uri(); ?>/js/libs/simple-anime.js"></script>
-	<script src="<?= get_template_directory_uri(); ?>/js/libs/simple-slide.js"></script>
-	<script src="<?= get_template_directory_uri(); ?>/js/libs/simple-form.js"></script>
-	<script src="<?= get_template_directory_uri(); ?>/js/script.js"></script>
 </body>
 
 </html>
