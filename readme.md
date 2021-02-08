@@ -1,6 +1,6 @@
-<h1 align="center">
+<h2 align="center">
 	<img alt="Bikcraft" src="./screenshot.png" width="500px" />
-</h1>
+</h2>
 
 <p align="center">
 	<a href="mailto:bortolettohenrique@gmail.com" target="_blank">
@@ -45,6 +45,8 @@ do <a href="https://worpdress.org" target="_blank">wordpress</a> e campos dinâm
 Aparência > Temas > Ativar Tema.
 ```
 
+---
+
 ### :file_folder: Gerar páginas e posts
 
 Para esse template funcionar além dos arquivos é preciso importar dentro do <a href="https://worpdress.org" target="_blank">wordpress</a> todas as páginas,
@@ -69,6 +71,8 @@ post e custom post types, para isso faça os passos abaixo:
 5. `Página inicial` deve estar setada como `Página Principal`;
 
 6. `Página de posts` deve estar setada como `Blog`;
+
+---
 
 ### :package: Plugins
 
@@ -101,6 +105,6 @@ Lista de plugins usado no projeto.
 
 - WPS Hide Login
 
-## :rocket:
+---
 
-Feito por :purple_heart: by [Henrique Bortoletto](https://github.com.br) :wave:
+by [Henrique Bortoletto](https://github.com.br) :wave:
