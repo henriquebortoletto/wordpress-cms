@@ -13,8 +13,7 @@
 
 ## :rocket: Sobre
 
-Bikcraft é um projeto feito no curso `wordpress como cms` da `origamid` transformando um layout estático totalmente gerenciável através de funcionalidades
-do <a href="https://worpdress.org" target="_blank">wordpress</a> e campos dinâmicos adicionados na interface feito com plugin <a href="https://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a>.
+Construção de um cms gerenciável através de funcionalidades do <a href="https://worpdress.org" target="_blank">wordpress</a> e campos dinâmicos adicionados na interface feito com plugin <a href="https://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a>.
 
 ### :bike: Primeiros passos
 
@@ -90,21 +89,6 @@ como loop's em campos personalizados. Exemplo:
 		<p><?php esc_html_e( 'Não foram encontrado nenhum item' ); ?></p>
 	<?php endif; ?>
 ```
-
-Lista de plugins usado no projeto.
-
-- Advanced Custom Fields PRO
-
-- Classic Editor
-
-- Importador do WordPress
-
-- SVG Support
-
-- W3 Total Cache
-
-- WPS Hide Login
-
 ---
 
 by [Henrique Bortoletto](https://github.com.br) :wave:
