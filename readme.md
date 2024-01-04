@@ -1,16 +1,3 @@
-<h2 align="center">
-	<img alt="Bikcraft" src="./screenshot.png" width="500px" />
-</h2>
-
-<p align="center">
-	<a href="mailto:bortolettohenrique@gmail.com" target="_blank">
-		<img src="https://img.shields.io/badge/gmail-red?style=flat&logo=gmail&labelColor=white">
-	</a>
-	<a href="https://www.linkedin.com/in/henriquebortoletto/" target="_blank">
-		<img src="https://img.shields.io/badge/linkedin-blue?style=flat&logo=linkedin&labelColor=blue">
-	</a>
-</p>
-
 ## :rocket: Sobre
 
 Construção de um cms gerenciável através de funcionalidades do <a href="https://worpdress.org" target="_blank">wordpress</a> e campos dinâmicos adicionados na interface feito com plugin <a href="https://www.advancedcustomfields.com/" target="_blank">Advanced Custom Fields</a>.
