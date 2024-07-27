@@ -1,12 +1,12 @@
-## :rocket: About
+## :rocket: Sobre
 
-Construction of a manageable cms using wordpress features and dynamic fields added to the interface using the `Advanced Custom Fields`.
+Construção de um cms gerenciável utilizando recursos do wordpress e campos dinâmicos adicionados utilizando os `custom fields`.
 
 ### :package: Plugins
 
-For fully manageable content, the main plugin to bring these features was `acf`, which has
-free and pro versions. In some structures used in this template, the pro version is needed to work,
-like loop's in custom fields. Example:
+Para conteúdo totalmente gerenciável, o plugin principal para trazer esses recursos foi `acf`, que tem
+versões gratuita e pro. Em algumas estruturas usadas neste modelo, a versão pro é necessária para funcionar,
+como loops em campos personalizados. Exemplo:
 
 ```php
 	<?php if ( have_rows( 'field_rows' ) ): ?>
